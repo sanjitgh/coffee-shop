@@ -54,7 +54,7 @@ const CoffeeDetails = () => {
         </div>
       </div>
       <p className="text-lg my-2 mt-5 font-medium">
-        <span text-lg>Making Process:</span> <br />
+        <span className="text-lg">Making Process:</span> <br />
         {making_process}
       </p>
       <div className="flex items-center">
