@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Heading from "../components/Heading";
 import { getAllFavourite, removeFavourite } from "../../public/utilities";
 import Card from "../components/Card";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
   const [coffees, setCoffees] = useState([]);
@@ -17,6 +18,9 @@ const Dashboard = () => {
   }
   return (
     <>
+    <Helmet>
+      <title>Dashboard</title>
+    </Helmet>
       <Heading
         title={"Welcome to Dashboard"}
         subtitle={

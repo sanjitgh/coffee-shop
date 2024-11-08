@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Card from "../components/Card";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Coffees = () => {
   const data = useLoaderData();
@@ -16,6 +17,9 @@ const Coffees = () => {
   };
   return (
     <>
+    <Helmet>
+      <title>All Coffees</title>
+    </Helmet>
       <div className="flex justify-between items-center">
         <div>
           <h1 className="font-semibold text-3xl">
